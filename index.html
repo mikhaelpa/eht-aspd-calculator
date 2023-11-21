@@ -49,26 +49,34 @@
                ancient: { atk: 83916, spd: 2.00 },
                primal: { atk: 109188, spd: 2.00 },
                pvp: { atk: 110840, spd: 2.20 },
-               pvpult: { atk: 1, spd: 2.20 }
+               pvpult: { atk: 1, spd: 2.20 },
+               wb: { atk: 1, spd: 2.20 },
+               og: { atk: 1, spd: 2.20 }
             },
             sorcerer: {
                ancient: { atk: 92308, spd: 2.20 },
                primal: { atk: 120107, spd: 2.20 },
                pvp: { atk: 115879, spd: 2.30 },
-               pvpult: { atk: 1, spd: 2.30 }
+               pvpult: { atk: 1, spd: 2.30 },
+               wb: { atk: 1, spd: 2.30 },
+               og: { atk: 1, spd: 2.30 }
 
             },
             ranger: {
                ancient: { atk: 75524, spd: 1.80 },
                primal: { atk: 98269, spd: 1.80 },
                pvp: { atk: 100764, spd: 2.00 },
-               pvpult: { atk: 1, spd: 2.00 }
+               pvpult: { atk: 1, spd: 2.00 },
+               wb: { atk: 1, spd: 2.00 },
+               og: { atk: 1, spd: 2.00 }
             },
             paladin: {
                ancient: { atk: 100699, spd: 2.40 },
                primal: { atk: 131026, spd: 2.40 },
                pvp: { atk: 125995, spd: 2.50 },
-               pvpult: { atk: 1, spd: 2.50 }
+               pvpult: { atk: 1, spd: 2.50 },
+               wb: { atk: 1, spd: 2.50 },
+               og: { atk: 1, spd: 2.50 }
             }
          };
          h_type = document.getElementById("hType").value;
@@ -130,10 +138,8 @@
             <div>
                <label for="hWeaponType" class="form-label"><b>Select weapon type</b>: </label>
                <select name="hWeaponType" class="form-select" id="hWeaponType" oninput="calcATKSPD()">
-                  <option value="ancient">Ancient</option>
-                  <option value="primal">Primal</option>
-                  <option value="pvp">PVP Supreme</option>
-                  <option value="pvpult">PVP Surpeme Ultimate</option>
+                  <option value="ancient">Ancient/Primal</option>
+                  <option value="pvp">Original/PVP/World Boss</option>
                </select>
             </div>
             <div>
