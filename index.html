@@ -123,7 +123,7 @@
                <h4>ᴾᵂᴿElmiel's ATK SPD CALCULATOR</h4>
             </div>
             <div>
-               <label for="hType" class="form-label"><b>Select a type of hunter</b>: </label>
+               <label for="hType" class="form-label"><b>Select hunter's type</b>: </label>
                <select name="hType" class="form-select" id="hType" oninput="calcATKSPD()">
                   <option value="berserker">Berserker</option>
                   <option value="sorcerer">Sorcerer</option>
@@ -141,7 +141,7 @@
             <div>
                <label for="fury" class="form-label">
                   <b>Fury: Berserkers can have level 1-13, </br>
-                     Sorcerers can have level 1</b>: </label>
+                     Sorcerers can have level 1 while using Immortal</b>: </label>
                <select name="fury" class="form-select" id="fury" oninput="calcATKSPD()">
                   <option value="4.54">Level 13</option>
                   <option value="4.36">Level 12</option>
@@ -152,7 +152,7 @@
                </select>
             </div>
             <div>
-               <label="" for="guild" class="form-label"><b>Guild Buff</b>:
+               <label="" for="guild" class="form-label"><b>Guild ATK SPD Buff</b>:
                   <select name="guild" class="form-select" id="guild" oninput="calcATKSPD()">
                      <option value="0">0%</option>
                      <option value="1">1%</option>
@@ -162,11 +162,11 @@
                      <option value="5">5%</option>
                   </select>
             </div>
-            <div><label for="sTech" class="form-label"><b>Secret Tech ATK SPD %</b>: </label><br>
-               <input type="number" min="0" max="10" class="form-control" id="sTech" name="sTech" value="0"
+            <div><label for="sTech" class="form-label"><b>Secret Tech ATK SPD % (Lv100:10%)</b>: </label><br>
+               <input type="number" min="0" max="10" class="form-control" id="sTech" name="sTech" value="10"
                   oninput="calcATKSPD()">
             </div>
-            <div><label for="eBonus" class="form-label"><b>Equipment Bonus %</b>: </label><br>
+            <div><label for="eBonus" class="form-label"><b>Equipment Bonus % + ATK SPD Rune %</b>: </label><br>
                <input type="number" min="0" class="form-control" id="eBonus" name="eBonus" value="0"
                   oninput="calcATKSPD()">
             </div>
@@ -180,7 +180,7 @@
                </select>
             </div>
             <div>
-               <label for="hChar" class="form-label"><b>Hunter Characteristic</b>: </label><br>
+               <label for="hChar" class="form-label"><b>Hunter's Characteristic</b>: </label><br>
                <select name="hChar" class="form-select" id="hChar" oninput="calcATKSPD()">
                   <option value="0">Other</option>
                   <option value="7">Heroic</option>
@@ -189,7 +189,7 @@
                </select>
             </div>
             <div>
-               <label for="hQuick" class="form-label"><b>Hunter Quicken Trait</b>: </label><br>
+               <label for="hQuick" class="form-label"><b>Hunter's Quicken Trait</b>: </label><br>
                <select name="hQuick" class="form-select" id="hQuick" oninput="calcATKSPD()">
                   <option value="1">0</option>
                   <option value="1.1">1</option>
@@ -217,3 +217,4 @@
 </body>
 
 </html>
+
